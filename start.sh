@@ -60,7 +60,7 @@ if [[ ! $USER_NOT_IN_GROUP ]]
 then
   echo "Adding 'jenkins' to group: $DOCKER_GROUP($DOCKER_GID)"
   echo -e "\tNote: The *name* may not be right, but the GID should be!"
-  adduser $DOCKER_USER $DOCKER_GROUP
+  adduser jenkins $DOCKER_GROUP
 fi
 
 /usr/sbin/sshd -D
